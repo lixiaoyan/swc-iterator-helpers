@@ -5,7 +5,8 @@
       {
         "targets": "chrome 80",
         "useBuiltIns": "usage",
-        "corejs": "3.45.0"
+        "corejs": "3.45.0",
+        "shippedProposals": true
       }
     ]
   ]

@@ -1,8 +1,13 @@
 {
   "scripts": {
     "babel": "babel ./index.js --out-file ./index.babel.js",
+    "babel.shippedProposals": "babel --config-file ./babel.shippedProposals.config.json ./index.js --out-file ./index.babel.shippedProposals.js",
     "swc": "swc ./index.js --out-file ./index.swc.js",
-    "swc.shippedProposals": "swc --config-file ./.swcrc.shippedProposals ./index.js --out-file ./index.swc.shippedProposals.js"
+    "swc.shippedProposals": "swc --config-file ./.swcrc.shippedProposals ./index.js --out-file ./index.swc.shippedProposals.js",
+    "toArray:babel": "babel ./toArray.js --out-file ./toArray.babel.js",
+    "toArray:babel.shippedProposals": "babel --config-file ./babel.shippedProposals.config.json ./toArray.js --out-file ./toArray.babel.shippedProposals.js",
+    "toArray:swc": "swc ./toArray.js --out-file ./toArray.swc.js",
+    "toArray:swc.shippedProposals": "swc --config-file ./.swcrc.shippedProposals ./toArray.js --out-file ./toArray.swc.shippedProposals.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
