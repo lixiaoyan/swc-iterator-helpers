@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "babel": "babel ./index.js --out-file ./index.babel.js",
+    "swc": "swc ./index.js --out-file ./index.swc.js",
+    "swc.shippedProposals": "swc --config-file ./.swcrc.shippedProposals ./index.js --out-file ./index.swc.shippedProposals.js"
+  },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.3",
